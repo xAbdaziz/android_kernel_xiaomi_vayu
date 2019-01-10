@@ -1,6 +1,6 @@
 #
 # Automatically generated file; DO NOT EDIT.
-# Linux/arm64 4.14.238 Kernel Configuration
+# Linux/arm64 4.14.239 Kernel Configuration
 #
 CONFIG_ARM64=y
 CONFIG_64BIT=y
@@ -1416,7 +1416,7 @@ CONFIG_BLK_DEV=y
 # CONFIG_BLK_DEV_PCIESSD_MTIP32XX is not set
 CONFIG_ZRAM=y
 # CONFIG_ZRAM_DEDUP is not set
-# CONFIG_ZRAM_WRITEBACK is not set
+CONFIG_ZRAM_WRITEBACK=y
 # CONFIG_BLK_DEV_DAC960 is not set
 # CONFIG_BLK_DEV_UMEM is not set
 # CONFIG_BLK_DEV_COW_COMMON is not set
