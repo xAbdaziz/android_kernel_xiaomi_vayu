@@ -6138,3 +6138,14 @@ CONFIG_SBITMAP=y
 CONFIG_CJSON=y
 CONFIG_HWCONF_MANAGER=y
 # CONFIG_FACTORY_BUILD is not set
+
+#
+# Xiaomi configuration options
+#
+CONFIG_MACH_XIAOMI=y
+CONFIG_MACH_XIAOMI_SM8150=y
+
+#
+# Xiaomi board selection
+#
+CONFIG_MACH_XIAOMI_VAYU=y
