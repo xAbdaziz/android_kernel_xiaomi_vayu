@@ -1,4 +1,4 @@
-export PATH="$HOME/tc/proton-clang/bin:$PATH"
+export PATH="$HOME/tc/clang12/bin:$PATH"
 SECONDS=0
 ZIPNAME="TestKernel-LA.UM.9.x-vayu-$(date '+%Y%m%d-%H%M').zip"
 
