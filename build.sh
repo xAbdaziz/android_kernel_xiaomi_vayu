@@ -1,4 +1,4 @@
-export PATH="$HOME/tc/clang12/bin:$PATH"
+export PATH="$HOME/tc/proton-clang/bin:$PATH"
 SECONDS=0
 ZIPNAME="TestKernel-LA.UM.9.x-vayu-$(date '+%Y%m%d-%H%M').zip"
 
@@ -11,10 +11,10 @@ fi
 fi
 
 mkdir -p out
-make O=out ARCH=arm64 vayu_user_defconfig
+make O=out ARCH=arm64 vayu_defconfig
 
 if [[ $1 == "-r" || $1 == "--regen" ]]; then
-cp out/.config arch/arm64/configs/vayu_user_defconfig
+cp out/.config arch/arm64/configs/vayu_defconfig
 echo -e "\nRegened defconfig succesfully!"
 exit 0
 else
