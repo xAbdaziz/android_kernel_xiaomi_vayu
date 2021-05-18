@@ -1,6 +1,6 @@
 export PATH="$HOME/tc/proton-clang/bin:$PATH"
 SECONDS=0
-ZIPNAME="Etherious-v2-vayu-$(date '+%Y%m%d-%H%M').zip"
+ZIPNAME="Etherious-v2.1-vayu-$(date '+%Y%m%d-%H%M').zip"
 
 if ! [ -d "$HOME/tc/proton-clang" ]; then
 echo "Proton clang not found! Cloning..."
