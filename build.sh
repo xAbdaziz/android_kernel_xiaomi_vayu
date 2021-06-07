@@ -21,6 +21,12 @@ fi
 export KBUILD_BUILD_USER=xawlw
 export KBUILD_BUILD_HOST=kangbox
 
+if [[ $1 = "-r" || $1 = "--regen" ]]; then
+make O=out ARCH=arm64 $DEFCONFIG
+cp out/.config arch/arm64/configs/$DEFCONFIG
+exit
+fi
+
 if [[ $1 = "-c" || $1 = "--clean" ]]; then
 rm -rf out
 fi
