@@ -5,14 +5,14 @@
 
 SECONDS=0 # builtin bash timer
 ZIPNAME="Etherious-v3-vayu-$(date '+%Y%m%d-%H%M').zip"
-TC_DIR="$HOME/tc/proton-clang"
+TC_DIR="$HOME/tc/azure-clang"
 DEFCONFIG="vayu_defconfig"
 
 export PATH="$TC_DIR/bin:$PATH"
 
 if ! [ -d "$TC_DIR" ]; then
-	echo "Proton clang not found! Cloning to $TC_DIR..."
-	if ! git clone -q --depth=1 --single-branch https://github.com/kdrag0n/proton-clang "$TC_DIR"; then
+	echo "Azure clang not found! Cloning to $TC_DIR..."
+	if ! git clone -q --depth=1 --single-branch https://gitlab.com/Panchajanya1999/azure-clang.git "$TC_DIR"; then
 		echo "Cloning failed! Aborting..."
 		exit 1
 	fi
