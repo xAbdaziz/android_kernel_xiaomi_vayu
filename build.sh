@@ -4,7 +4,7 @@
 # Copyright (C) 2020-2021 Adithya R.
 
 SECONDS=0 # builtin bash timer
-ZIPNAME="Etherious-v3-vayu-$(date '+%Y%m%d-%H%M').zip"
+ZIPNAME="Etherious-v3.1-vayu-$(date '+%Y%m%d-%H%M').zip"
 TC_DIR="$HOME/tc/azure-clang"
 DEFCONFIG="vayu_defconfig"
 
